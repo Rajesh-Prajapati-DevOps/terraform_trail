@@ -10,9 +10,14 @@ terraform {
 }
 provider "azurerm" {
   features {}
-  subscription_id = "787c86fa-2cad-40aa-8646-4356806d5a43"
+  subscription_id = "9d96148d-a3b7-4254-8194-71f35003800c"
 }
 resource "azurerm_resource_group" "rjpipe5" {
   name     = "rjpipe_rg5"
+  location = "West Europe"
+}
+
+resource "azurerm_resource_group" "rjpipe78" {
+  name     = "rjpipe_rg588"
   location = "West Europe"
 }
